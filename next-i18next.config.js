@@ -1,6 +1,10 @@
-module.exports = {
+/** @type {import('next-i18next').UserConfig} */
+const nextI18NextConfig = {
     i18n: {
-        locales: ['sq', 'en'],
         defaultLocale: 'sq',
+        locales: ['sq', 'en'],
+        localeDetection: true,
     },
 }
+
+module.exports = nextI18NextConfig
